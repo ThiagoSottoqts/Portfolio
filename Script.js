@@ -12,6 +12,6 @@ function abrirMobile(){
     } else if (open === false) {
         open = true
     menuMobile.classList.add('open')    
-} 
+    } 
 }
 
