@@ -47,7 +47,7 @@ h1 {
 
 .menu {
     display: flex;
-    margin-left: 500px; 
+    margin-left: 50vh; 
 }
 
 .menu li {
@@ -100,8 +100,40 @@ span.material-icons {
     padding: 40px;       
 }
 
+/* -- Section 1 - about -- */
 
-@media screen and (max-width: 480px) {
+div.container {
+    display: flex;
+}
+.about {
+    display: flex;
+}
+
+p.about_me {
+    font-size: 20px;
+    display: flex;    
+    align-items: center;
+    text-align: justify;
+    padding: 40px;
+    line-height: 40px;        
+}
+
+.button a {
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 250px;
+    border:1px solid black;
+    border-radius:4px;
+    cursor:pointer;
+    font-family: 'Corinthia', 'cursive', sans-serif;
+    font-weight:bold;
+    font-size:20px;
+    padding:6px 6px;
+    text-decoration:none;
+    background: whitesmoke;
+}
+
+@media screen and (max-width: 600px) {
     .header {
         height: 70px;
         justify-content: center;
@@ -158,7 +190,7 @@ span.material-icons {
     }
 }
 
-@media (min-width: 481px) and (max-width: 900px) {
+@media (min-width: 601px) and (max-width: 900px) {
     .header {
         height: 130px;
         justify-content: center;
@@ -171,6 +203,8 @@ span.material-icons {
         border-radius: 80%;
         align-self: center;
         margin-left: 20px;
+        width: 80px;
+        height: 80px;
     }
     
     h1 {
@@ -193,11 +227,12 @@ span.material-icons {
         text-decoration: none;
     }
     
+    
 }
 
 @media (min-width: 901px) and (max-width: 1300px) {
     .header {
-        height: 200px;
+        height: 150px;
         justify-content: center;
         justify-self: center;
         padding: 0;
@@ -208,13 +243,13 @@ span.material-icons {
         border-radius: 80%;
         align-self: center;
         margin-left: 40px;
-        width: 130px;
-        height: 130px;
+        width: 90px;
+        height: 90px;
     }
     
     h1 {
         color: var(--third);
-        font-size: 60px;
+        font-size: 50px;
         margin-left: 40px;
         align-self: center;
     }
@@ -226,10 +261,50 @@ span.material-icons {
     }
         
     .menu li a {
-        padding: 10px;
-        font-size: 30px;
+        padding: 20px;
+        font-size: 20px;
         color: var(--primary);
         text-decoration: none;
     }
     
+    
 }
+
+@media (min-width: 1300px) and (max-width: 1500px){
+    .header {
+        height: 150px;
+        justify-content: center;
+        justify-self: center;
+        padding: 0;
+        justify-content: space-between;
+    }
+
+    .perfil_foto {
+        border-radius: 80%;
+        align-self: center;
+        margin-left: 30px;
+        width: 110px;
+        height: 110px;
+    }
+
+    h1 {
+        color: var(--third);
+        font-size: 100px;
+        margin-left: 40px;
+        align-self: center;
+    }
+
+    .menu {
+        display: flex;
+        margin-left: 100px;
+        text-align: center;
+    }
+        
+    .menu li a {
+        padding: 30px;
+        font-size: 20px;
+        color: var(--primary);
+        text-decoration: none;
+    }
+}
+
