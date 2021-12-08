@@ -2,6 +2,7 @@
     --primary: white;
     --secondary: rgb(240, 231, 231);
     --third: #d8b99a;
+    --four: black;
 }
 
 * {
@@ -12,16 +13,15 @@
 
 
 
-.header {
-    position: fixed;
+.header {    
     color: var(--secondary);
     justify-content: space-between;
     align-items: center;
     display: flex;
-    background: black;
+    background: white;
     width: 100%;
-    box-shadow: 0 0 15px black;
-    padding: 0 40px;
+    box-shadow: 0 0 01px black;
+    padding: 0 0.5%;
     margin: auto;
      
 }
@@ -35,18 +35,28 @@
 .perfil_foto {
     border-radius: 80%;
     align-self: center;
+    border-radius: 80%;
+    margin-left: 30px;
+    width: 110px;
+    height: 110px;
 }
 
 h1 {
     color: var(--third);
     font-size: 100px;
     font-family: 'Corinthia', 'cursive', sans-serif;
-    margin-left: 50px;
+    margin-left: 30px;
+    padding: 20px;
+    align-self: center;
 }
 
 .menu {
     display: flex;
-    margin-left: 50vh; 
+    margin-left: 50vh;
+    display: flex;
+    margin-left: 100px;
+    text-align: center;
+     
 }
 
 .menu li {
@@ -55,9 +65,11 @@ h1 {
 
 .menu li a {
     padding: 40px;
-    font-size: 20px;
-    color: var(--primary);
+    font-size: 30px;
+    color: var(--four);
     text-decoration: none;
+    
+    
 }
 
 .menu li a:hover {
@@ -103,10 +115,15 @@ span.material-icons {
 /* -- Section 1 - about -- */
 
 div.container {
+    margin: 20px;
     display: flex;
 }
 .about {
     display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .about_img{
@@ -121,67 +138,101 @@ p.about_me {
     display: flex;    
     align-items: center;
     text-align: justify;
-    padding: 40px;
+    padding: 100px;
     line-height: 40px;        
 }
 
-.button a {
-    position: absolute;
-    margin-top: -200px;
-    margin-left: 250px;
-    border:1px solid black;
-    border-radius:4px;
-    cursor:pointer;
-    font-family: 'Corinthia', 'cursive', sans-serif;
-    font-weight:bold;
-    font-size:20px;
-    padding:6px 6px;
-    text-decoration:none;
-    background: whitesmoke;
+.button {
+    background: var(--primary);
+    
 }
+
+.button {
+    margin-top: 40px;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+   }
+   
+   button:hover {
+    background-color: var(--third);
+    box-shadow: 0px 15px 20p rgb(17, 15, 15);
+    color: #fff;
+    transform: translateY(-7px);
+   }
+   
+   button:active {
+    transform: translateY(-1px);
+   }
+
+   .buttom a {
+    color: black;
+   }
 
 /*-- Flex Container --*/
 .FlexContainer {
+    margin-top: 60px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
     width: 100%;
     background-color: white;
-    height: 70vh;
+    height: 100%;
     overflow: auto;
     flex-direction: row;
 }
 
 .FlexContainer div {
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
     margin: 5px;    
     justify-content: center;
     border-radius: 35px;
     background: #faf9f9;
-    box-shadow:  20px 20px 20px #a3a2a2,
-             -39px -39px 79px #ffffff;
+    box-shadow:  15px 15px 15px #a3a2a2,
+             -10px -10px -10px #ffffff;
 }
 
 .FlexContainer div:hover {
-    width: 500px;
-    height: 500px;
     margin: 5px;    
     justify-content: center;
+    width: 200px;
+    height: 200px;
     border-radius: 35px;
-    background: var(--third);
-    box-shadow:  20px 20px 20px #a3a2a2,
+    box-shadow:  10px 10px 10px #a3a2a2,
              -39px -39px 79px #ffffff;
+             transition: 0.7s ease-in-out;
 }
 
 img.language {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 35px;
-    
+    width: 50%;    
 }
+
+
+/*-- Section projetos --*/
+.projetosid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+    
+
+/*-- Responsividade --*/
 
 @media screen and (max-width: 700px) {
     .header {
@@ -214,11 +265,18 @@ img.language {
         align-self: center;
         margin-left: 20px;       
     }
+
+    /*-- Menu mobile --*/
+
+    .menu_mobile { 
+        display: list-item;
+    } /* verificar*/
     
     span.material-icons {
         font-size: 25px;
         display: flex;
         margin-right: 50px;
+
     }
     
     a {
@@ -237,6 +295,48 @@ img.language {
 
     .menu_mobile li {
         text-align: center;        
+    }
+
+    /*-- Section about --*/
+
+
+    .about .container{
+        flex-direction: column;
+        
+    } 
+    
+    p.about_me {
+        font-size: 100%;
+        text-align: justify;
+        margin: auto;
+        line-height: 150%;
+    } 
+    .about_img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .button {
+        margin-top: 40px;
+    }
+
+    /*-- Section FlexContainer --*/
+
+    section .FlexContainer{
+        width: 100px;
+        height: 100px;
+        line-height: 20px;
+    }
+
+    img.language {
+       width: 50%;    
+    }
+    
+    img.language:hover {
+        width: 90%;
+        height: 90%;
+        transition: 0.1s;
+        
     }
 }
 
@@ -278,83 +378,5 @@ img.language {
     }
     
     
-}
-
-@media (min-width: 901px) and (max-width: 1300px) {
-    .header {
-        height: 150px;
-        justify-content: center;
-        justify-self: center;
-        padding: 0;
-        justify-content: space-between;
-    }
-
-    .perfil_foto {
-        border-radius: 80%;
-        align-self: center;
-        margin-left: 40px;
-        width: 90px;
-        height: 90px;
-    }
-    
-    h1 {
-        color: var(--third);
-        font-size: 50px;
-        margin-left: 40px;
-        align-self: center;
-    }
-
-    .menu {
-        display: flex;
-        margin-left: 0;
-        text-align: center;
-    }
-        
-    .menu li a {
-        padding: 20px;
-        font-size: 20px;
-        color: var(--primary);
-        text-decoration: none;
-    }
-    
-    
-}
-
-@media (min-width: 1300px) and (max-width: 1500px){
-    .header {
-        height: 150px;
-        justify-content: center;
-        justify-self: center;
-        padding: 0;
-        justify-content: space-between;
-    }
-
-    .perfil_foto {
-        border-radius: 80%;
-        align-self: center;
-        margin-left: 30px;
-        width: 110px;
-        height: 110px;
-    }
-
-    h1 {
-        color: var(--third);
-        font-size: 100px;
-        margin-left: 40px;
-        align-self: center;
-    }
-
-    .menu {
-        display: flex;
-        margin-left: 100px;
-        text-align: center;
-    }
-        
-    .menu li a {
-        padding: 30px;
-        font-size: 20px;
-        color: var(--primary);
-        text-decoration: none;
-    }
 }
 
