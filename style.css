@@ -7,12 +7,12 @@ a {
     color: black;
     text-decoration: none;
     transition: 0.3s;
-    font-family: 'Corinthia', 'cursive', sans-serif;
+    font-family: "DM Serif Display", serif;
 }
 
 a:hover {
     opacity: 0.7;
-    color: #516BEB;
+    color: #FEFAE0;
 }
 
 .nome {
@@ -27,7 +27,7 @@ nav {
     align-items: center;
     height: 12vh;
     font-size: 34px;
-    background-color: #FF8303;    
+    background-color: #D4A373;    
 }
 
 .nav-list {
@@ -58,7 +58,7 @@ nav {
 
 .about {
     padding: 80px;
-    background: white;
+    background: #FEFAE0;
     text-align: center;
 }
 
@@ -92,7 +92,7 @@ button.button {
    }
 
    .button:hover {
-    background-color: #FF8303;
+    background-color: #CCD5AE;
     box-shadow: 5px 8px 10px rgb(0, 0, 0);
     color: #fff;
     transform: translateY(-10px);
@@ -103,18 +103,33 @@ button.button {
    }
 
 /*-- Section languages--*/
-.languages {
-    padding: 200px;
-    background: #F0E3CA;
-    display: flex;
+
+.languages {   
     width: 100%;
-    height: 100%;
+    height: 500px; 
+    background: #FAEDCD;
 }
 
-.flexContainer {
-    padding: 20px;
+.title2 {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title2 h1 {
+    font-family: "DM Serif Display", serif;
+    color: black;
+    font-size: 5rem;
+    margin-top: -100px;
+}
+
+.languageLearned {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;     
+    
 }
 
 img.language { 
@@ -136,8 +151,10 @@ img.language:hover {
     transition: 0.7s ease-in-out;
 }
 
-
 /*-- Section projects--*/
+.project {
+    background: #FAEDCD;
+}
 
 .project1 {
     height: 100px;
@@ -148,12 +165,12 @@ img.language:hover {
 }
 
 .project1 h1 {
-    font-family: 'Corinthia', 'cursive', sans-serif;
+    font-family: "DM Serif Display", serif;
     color: black;
     font-size: 5rem;
 }
 
-.gallery-container {
+.gallery-projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -181,21 +198,11 @@ img.language:hover {
     border: 10px solid black;
 }
 
-
-/*-- Section social links--*/
-
-.socialLinks {
-    padding: 250px;
-    background: #FFFCDC;
-}
-
-
-
 /*-- Section footer--*/
 
 footer {
-    padding: 100px;
-    background: #84DFFF;
+    padding: 50px;
+    background: #E9EDC9;
 }
 
 
