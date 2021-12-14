@@ -104,45 +104,39 @@ button.button {
 
 /*-- Section languages--*/
 
-.languages {   
-    width: 100%;
-    height: 500px; 
-    background: #FAEDCD;
+.languages { 
+    padding: 50px;     
+    background: #FAEDCD;    
 }
 
-.title2 {
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.title2 h1 {
+h1 {
     font-family: "DM Serif Display", serif;
     color: black;
-    font-size: 5rem;
-    margin-top: -100px;
+    font-size: 4rem;    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: -90px;
 }
 
 .languageLearned {
-    padding: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
+    padding: 100px;  
+    display: flex;    
+    justify-content: center;
+    align-content: center;   
 }
 
-img.language { 
-    padding: 10px;  
-    justify-content: space-around;
-    border-radius: 50px;
-    background: #F0E3CA;
-    box-shadow:  20px 20px 28px #9c9483,
-            -20px -20px 28px  #ffffff;    
+img.language {
+    margin: 30px;
+    justify-content: space-between;
+    border-radius: 46px;
+    background: #FAEDCD;
+    box-shadow: 7px 7px 14px #676154,
+            -7px -7px 14px #ffffff;    
 }
 
 img.language:hover {
-     background: whitesmoke;
+     background: #D4A373;
     justify-content: center;
     width: 300px;
     height: 300px;
@@ -153,7 +147,8 @@ img.language:hover {
 
 /*-- Section projects--*/
 .project {
-    background: #FAEDCD;
+    padding: 100px;
+    background: #FEFAE0;
 }
 
 .project1 {
@@ -165,37 +160,30 @@ img.language:hover {
 }
 
 .project1 h1 {
+    margin-top: -200px;
     font-family: "DM Serif Display", serif;
     color: black;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .gallery-projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 2vw;
-    padding: 3vh 2vw;
+    gap: 2vw;    
 }
 
-.galery-items{
-    width: 250px;
-    height: 250px;
-    border: 10px solid #FFFCDC;
-    box-shadow: 5px 5px 5px #006;
-    filter: grayscale(100%);
-    transition: .5s linear;
+.galery-items{  
+    border: 10px solid #D4A373;
+    box-shadow: 5px 5px 5px #006;    
+    transition: .5s linear;    
 }
 
-.galery-items img {
-    width: 100%;
-    height: 100%;    
-}
 
 .galery-items:hover {
-    transform: scale(1.7);
+    transform: scale(1.2);
     filter: none;
-    border: 10px solid black;
+    border: 10px solid black;    
 }
 
 /*-- Section footer--*/
@@ -220,10 +208,10 @@ footer {
 
     .nav-list {
         position: absolute;
-        top: 12vh;        
+        top: 10vh;        
         width: 100vh;
         height: 92vh;
-        background: #EDD2F3;
+        background: #FEFAE0;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
