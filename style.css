@@ -15,7 +15,7 @@ a:hover {
     color: #FEFAE0;
 }
 
-.nome {
+.nome {    
     margin-top: 10px;
     font-size: 74px;
     letter-spacing: 4px;
@@ -130,17 +130,17 @@ h1 {
 img.language {
     margin: 30px;
     justify-content: space-between;
-    border-radius: 46px;
+    border-radius: 19px;
     background: #FAEDCD;
-    box-shadow: 7px 7px 14px #676154,
-            -7px -7px 14px #ffffff;    
+    box-shadow:  6px 6px 5px #99917d,
+             -6px -6px 5px #ffffff;    
 }
 
 img.language:hover {
      background: #D4A373;
     justify-content: center;
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
     border-radius: 35px;
     opacity: 0.9;
     transition: 0.7s ease-in-out;
