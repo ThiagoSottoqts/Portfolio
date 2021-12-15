@@ -16,6 +16,7 @@ a:hover {
 }
 
 .nome {
+    margin-top: 10px;
     font-size: 74px;
     letter-spacing: 4px;
     font-family: 'Corinthia', 'cursive', sans-serif;
