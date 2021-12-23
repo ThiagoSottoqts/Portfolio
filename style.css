@@ -3,16 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-a {
-    color: black;
+a.navList {
+    color: #bf5b04;
     text-decoration: none;
     transition: 0.3s;
     font-family: "DM Serif Display", serif;
 }
 
-a:hover {
+a.navList:hover {
     opacity: 0.7;
-    color: #FEFAE0;
+    color: #d9d9d9;
 }
 
 .nome {    
@@ -20,6 +20,7 @@ a:hover {
     font-size: 74px;
     letter-spacing: 4px;
     font-family: 'Corinthia', 'cursive', sans-serif;
+    color: #bf5b04;
 }
 
 nav {
@@ -28,7 +29,7 @@ nav {
     align-items: center;
     height: 12vh;
     font-size: 34px;
-    background-color: #D4A373;    
+    background-color: #121011;   
 }
 
 .nav-list {
@@ -50,8 +51,8 @@ nav {
 
 .mobile-menu div {
     width: 32px;
-    height: 2px;
-    background: black;
+    height: 1px;
+    background: #bf5b04;
     margin: 9px;
 }
 
@@ -59,7 +60,7 @@ nav {
 
 .about {
     padding: 80px;
-    background: #FEFAE0;
+    background: #d9d9d9;
     text-align: center;
 }
 
@@ -83,19 +84,20 @@ button.button1 {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
-    background-color: #fff;
+    background-color: #121011;
     border: none;
     border-radius: 45px;
     box-shadow: 5px 8px 10px rgb(0, 0, 0);
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
+    color: #bf5b04;
    }
 
    .button1:hover {
-    background-color: #CCD5AE;
+    background-color: #bf5b04;
     box-shadow: 5px 8px 10px rgb(0, 0, 0);
-    color: #fff;
+    color: #121011;
     transform: translateY(-10px);
    }
    
@@ -107,17 +109,7 @@ button.button1 {
 
 .languages { 
     padding: 50px;     
-    background: #FAEDCD;    
-}
-
-h1 {
-    font-family: "DM Serif Display", serif;
-    color: black;
-    font-size: 4rem;    
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin-top: -90px;
+    background: #121011;   
 }
 
 .languageLearned {
@@ -131,25 +123,14 @@ img.language {
     margin: 30px;
     justify-content: space-between;
     border-radius: 19px;
-    background: #FAEDCD;
-    box-shadow:  6px 6px 5px #99917d,
-             -6px -6px 5px #ffffff;    
-}
-
-img.language:hover {
-     background: #D4A373;
-    justify-content: center;
-    width: 150px;
-    height: 150px;
-    border-radius: 35px;
-    opacity: 0.9;
-    transition: 0.7s ease-in-out;
+    box-shadow: 05px 05px 05px #4c2402,
+             -05px -05px 05px #ff9206;
 }
 
 /*-- Section projects--*/
 .project {
     padding: 100px;
-    background: #FEFAE0;
+    background: #d9d9d9;
 }
 
 .project1 {
@@ -195,7 +176,8 @@ img.language:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;  
+    height: 100%;
+    background: #d9d9d9;  
 }
 
 .button {   
@@ -206,14 +188,14 @@ img.language:hover {
     border-radius: 50px;
     cursor: pointer;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-out;
+    transition: all 0.8s ease-out;
     overflow: hidden;
 }
 .button:hover {
     background: #FEFAE0;
     width: 200px;
     align-items: center;
-    transition: all 0.5s ease-out;
+    
 }
 .icon {    
     text-align: center;
@@ -233,11 +215,13 @@ img.language:hover {
     line-height: 60px;    
 }
 
-span {
+span a {
     font-size: 20px;   
     line-height: 60px;
     margin-left: 30px;
-    margin-top: -10px;    
+    margin-top: -10px; 
+    text-decoration: none;
+    color: #121011;;
 }
 
 
@@ -245,13 +229,16 @@ span {
 
 .footer {
     padding: 10px;
-    background: #E9EDC9;
+    background: #121011;
     justify-content: center;
     text-align: center;
+    color: #bf5b04;
+    
 }
 
-.developed {
-    margin: auto;
+.developed {    
+    font-family: "DM Serif Display", serif;
+    font-size: 30px;
 }
 
 /*Responsividade*/
@@ -262,8 +249,9 @@ span {
     }
 
     .nome {
-        font-size: 30px;
-        
+        font-size: 40px;
+        justify-content: center;
+        margin-top: 10px;
     }
 
     .nav-list {
@@ -277,7 +265,7 @@ span {
         justify-content: space-around;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .nav-list li {
@@ -291,6 +279,30 @@ span {
 
     .nav-list.active {
         transform: translateX(0);
+    }
+
+    /*-- Section about--*/
+
+    section.about {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 50px;
+    }
+
+
+    button.button1 {
+        margin-top: auto;
+    }
+
+    /*-- Section languages--*/
+
+    .languageLearned {
+        padding: 10px;    
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
     }
 
     @keyframes navLinkFade {
