@@ -29,7 +29,8 @@ nav {
     align-items: center;
     height: 12vh;
     font-size: 34px;
-    background-color: #121011;   
+    background-color: #121011;
+    
 }
 
 .nav-list {
@@ -133,21 +134,6 @@ img.language {
     background: #d9d9d9;
 }
 
-.project1 {
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -50px;
-}
-
-.project1 h1 {
-    margin-top: -200px;
-    font-family: "DM Serif Display", serif;
-    color: black;
-    font-size: 4rem;
-}
-
 .gallery-projects {
     display: flex;
     flex-wrap: wrap;
@@ -156,16 +142,15 @@ img.language {
 }
 
 .galery-items{  
-    border: 10px solid #D4A373;
-    box-shadow: 5px 5px 5px #006;    
-    transition: .5s linear;    
+    border: 05px solid #bf5b04;
+    box-shadow: 5px 5px 5px #121011;    
+    transition: .4s linear;    
 }
 
-
 .galery-items:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     filter: none;
-    border: 10px solid black;    
+    border: 05px solid black;    
 }
 
 /*-- Section social links--*/
@@ -248,6 +233,13 @@ span a {
         overflow-x: hidden;
     }
 
+    
+    .container {
+        padding: 50px;
+        flex-direction: column;
+        width: 60vh;
+    }
+
     .nome {
         font-size: 40px;
         justify-content: center;
@@ -291,18 +283,70 @@ span a {
         padding: 50px;
     }
 
-
     button.button1 {
         margin-top: auto;
     }
+    
 
     /*-- Section languages--*/
 
     .languageLearned {
-        padding: 10px;    
-        flex-direction: column;
+        padding: 05px;    
+        display: flex;
+        justify-content: center;
         align-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
+    }
+
+    img.language {
+        width: 70px;
+        height: 70px;
+        border-radius: 10px;
+    }
+
+    
+    p.about_me {
+        font-size: 2vh;
+        justify-content: center;
+        align-content: center; 
+        padding: 10px;
+        margin-top: -50px;
+        line-height: 5vh;           
+    }
+
+    .about_img {
+        width: 49vh;
+        height: 49vh;
+        align-self: center;
+    }
+
+    button.button {
+        margin-top: 0px;
+    }
+
+
+    /*-- Section project--*/
+
+    .project {
+        padding: 10px;
+    }
+
+    .galery-items img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /*-- Section socialLinks--*/
+
+    .socialLinks {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .button {
+        margin-top: 10px;
     }
 
     @keyframes navLinkFade {
@@ -316,38 +360,7 @@ span a {
         }
     } 
 
-    /*Section about*/
-.about {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    padding: 0;
-    
-}
+   
 
-.container {
-        padding: 50px;
-        flex-direction: column;
-        width: 60vh;
-    }
 
-p.about_me {
-        font-size: 2vh;
-        justify-content: center;
-        align-content: center; 
-        padding: 10px;
-        margin-top: -50px;
-        line-height: 5vh;           
-    }
-
-.about_img {
-    width: 49vh;
-    height: 49vh;
-    align-self: center;
-    }
-
-button.button {
-        margin-top: 0px;
-    }
 }
