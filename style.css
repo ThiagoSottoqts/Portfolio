@@ -17,7 +17,7 @@ a.navList:hover {
 
 .nome {    
     margin-top: 10px;
-    font-size: 74px;
+    font-size: 05vw;
     letter-spacing: 4px;
     font-family: 'Corinthia', 'cursive', sans-serif;
     color: #bf5b04;
@@ -28,7 +28,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 12vh;
-    font-size: 34px;
+    font-size: 28px;
     background-color: #121011;
     
 }
@@ -51,7 +51,7 @@ nav {
 }
 
 .mobile-menu div {
-    width: 32px;
+    width: 10vw;
     height: 1px;
     background: #bf5b04;
     margin: 9px;
@@ -71,12 +71,12 @@ nav {
 }
 
 p.about_me {
-    font-size: 20px;
+    font-size: 1vw;
     display: flex;    
     align-items: center;
     text-align: justify;
     padding: 80px;
-    line-height: 40px;        
+    line-height: 40px;      
 }
 
 button.button1 {
@@ -96,7 +96,7 @@ button.button1 {
    }
 
    .button1:hover {
-    background-color: #bf5b04;
+    background-color: #d9d9d9;
     box-shadow: 5px 8px 10px rgb(0, 0, 0);
     color: #121011;
     transform: translateY(-10px);
@@ -110,7 +110,7 @@ button.button1 {
 
 .languages { 
     padding: 50px;     
-    background: #121011;   
+    background: rgb(224, 220, 220);   
 }
 
 .languageLearned {
@@ -123,9 +123,10 @@ button.button1 {
 img.language {
     margin: 30px;
     justify-content: space-between;
-    border-radius: 19px;
-    box-shadow: 05px 05px 05px #4c2402,
-             -05px -05px 05px #ff9206;
+    border-radius: 22px;
+    background: #d9d9d9;
+    box-shadow:  5px 5px 8px #575757,
+             -5px -5px 8px #ffffff;
 }
 
 /*-- Section projects--*/
@@ -228,12 +229,11 @@ span a {
 
 /*Responsividade*/
 
-@media (max-width: 990px) {
+@media (max-width: 1300px) {
     body {
         overflow-x: hidden;
     }
 
-    
     .container {
         padding: 50px;
         flex-direction: column;
@@ -241,7 +241,6 @@ span a {
     }
 
     .nome {
-        font-size: 40px;
         justify-content: center;
         margin-top: 10px;
     }
@@ -249,7 +248,7 @@ span a {
     .nav-list {
         position: absolute;
         top: 10vh;        
-        width: 100vh;
+        width: 190vh;
         height: 92vh;
         background: #FEFAE0;
         flex-direction: column;
@@ -257,7 +256,7 @@ span a {
         justify-content: space-around;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
-        font-size: 25px;
+        font-size: 10vw;
     }
 
     .nav-list li {
@@ -330,7 +329,7 @@ span a {
     /*-- Section project--*/
 
     .project {
-        padding: 10px;
+        padding: 15px;
     }
 
     .galery-items img {
